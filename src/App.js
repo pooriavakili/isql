@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function App() {
   return (
     <div>
-        <Link to="tables">table</Link>
+        <Link to="/tables">table</Link>
     </div>
   );
 }

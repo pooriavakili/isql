@@ -8,7 +8,7 @@ const Routes=[
         component:App
     },
     {
-        path: "/table",
+        path: "/tables",
         component: Tables
     }
 

@@ -5,6 +5,8 @@ import "./table.css"
 function Tables() {
     useContext(ContextProvider);
     return (
+        <div>
+            <h1>فیش حقوقی دی ماه سال 1398</h1>
         <Table className="Table">
             <thead>
             <tr>
@@ -43,28 +45,52 @@ function Tables() {
             </tr>
 
             <tr>
-                <th
-                 >اضافه کاری
-                </th>
+                <td
+                 >
+                </td>
+                <td>اضافه کاری</td>
+                <td></td>
+
             </tr>
 
             <tr>
-                <td>ایاب وذهاب</td>
+                <td
+                >
+                </td>
+                <td>ایاب و ذهاب</td>
+                <td></td>
             </tr>
             <tr>
+                <td
+                >
+                </td>
                 <td>مزایای متفرقه</td>
+                <td></td>
             </tr>
             <tr>
+                <td
+                >
+                </td>
                 <td>روند ماه قبل</td>
+                <td></td>
             </tr>
             <tr>
+                <tr
+                >
+                </tr>
                 <td>بن کارگری</td>
+                <th></th>
             </tr>
             <tr>
+                <td
+                >
+                </td>
                 <td>سنوات</td>
+                <td></td>
             </tr>
             </tbody>
         </Table>
+        </div>
     );
 }
 

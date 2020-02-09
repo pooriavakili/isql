@@ -1,0 +1,9 @@
+.Table,td,th{
+
+
+    border: 1px solid black;
+}
+.Table{
+    width: 700px;
+    height:700px;
+}

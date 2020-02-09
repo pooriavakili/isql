@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import Table from "./components/Table";
-
+import {Link} from 'react-router-dom'
 function App() {
   return (
     <div>
-<Table/>
+        <Link to="tables">table</Link>
     </div>
   );
 }

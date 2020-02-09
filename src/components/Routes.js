@@ -1,5 +1,5 @@
 import App from "../App";
-import Table from "./Table";
+import Tables from "./Table";
 
 const Routes=[
     {
@@ -9,7 +9,7 @@ const Routes=[
     },
     {
         path: "/table",
-        component: Table
+        component: Tables
     }
 
 ]

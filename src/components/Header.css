@@ -1,0 +1,85 @@
+.Div{
+margin-left:  50em;
+    margin-top: 16em;
+}
+.ebtekhabSal{
+    font-size: .1em;
+    margin-left: 7em;
+    font-family:B Nazanin;
+}
+.Frag{
+    overflow: hidden;
+    overflow-y: hidden;
+    width:1045px;
+    height: 1045px;
+    background-image: url("./../assets/img/background.jpg");
+}
+
+.Tablee{
+margin-left: 300px;
+    margin-top: -23px;
+}
+.Mah{
+  margin-right: -300px;
+    margin-top: -90px;
+}
+.FishHoghughy{
+    color: white;
+    font-family:B Nazanin;
+    text-decoration: none;
+    background: green;
+    padding: 10px;
+    border-radius: 1em;
+}
+.Select{
+width: 200px;
+    height: 30px;
+}
+.MahSelect{
+    width: 200px;
+    height: 30px;
+}
+@media (max-width: 700px) {
+    .Frag{
+        width: 500px;
+        height: 700px;
+    }
+    .Div{
+       margin-left: 14em;
+       margin-top: 15em;
+    }
+   .Mah{
+   position: absolute;
+       left: 13em;
+   }
+    .Tablee{
+margin-left:2em;
+        margin-top: -1em;
+    }
+    .Select{
+        width: 100px;
+        margin-left: 7em;
+    }
+    .MahSelect{
+        width: 100px;
+    }
+}
+@media (min-width: 100px) {
+.ebtekhabSal{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+    .Div{
+    }
+    .entekhabMah{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .Mah{
+margin-left: 2em;
+    }
+    .Tablee{
+        margin-right: 20em;
+    }
+}

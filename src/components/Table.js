@@ -1,97 +1,149 @@
-import React,{useContext} from 'react';
+import React,{useContext,Fragment} from 'react';
 import {Table} from "react-bootstrap";
-import ContextProvider from "../Context";
+import ContextProvider from "../stateManagment/Context";
 import "./table.css"
-function Tables() {
+import Table2 from "./Table2";
+import Table3 from "./Table3";
+import Table4 from "./Table4";
+import Table5 from "./Table5";
+import Table6 from "./Table6";
+export default function Tables() {
     useContext(ContextProvider);
     return (
+        <Fragment>
+            <div className='Sherkat'>
+                <img src={require("./../assets/img/isqi-logo-revised.png")} alt=""/>
+            </div>
+            <div className="Neveshte">
+                <h1 className="NeveshteStyle"
+                >فیش حقوقی دی ماه سال 1398</h1>
+            </div>
         <div>
-            <h1>فیش حقوقی دی ماه سال 1398</h1>
         <Table className="Table">
             <thead>
             <tr>
-                <th>کسور</th>
-                <th>مزایا</th>
-                <th>کارکرد</th>
+                {
+                Table4.map(
+                    (item,index)=>
+                    (
+                    <th key={item.id}
+                        className='Rang1'>
+                        {item.title}</th>
+                ))
+            }
             </tr>
             </thead>
             <tbody>
             <tr>
-
-                <td>بیمه سهم کارمند</td>
-                <td>حقوق پایه</td>
-                <td>کارکرد عادی</td>
-
+                {
+                    Table2.map(
+                        (item,index)=>(
+                        <td key={item.id} className='Black'>{item.title}</td>
+                    ))
+                }
             </tr>
             <tr>
-
-                <td>مالیات</td>
-                <td>حق جذب</td>
-                <td>ساعت اضافه کار</td>
-
+                {
+                    Table5.map(
+                        (item,index)=>
+                        <td key={item.id} className='Black1'>{item.title}</td>
+                    )
+                }
             </tr>
             <tr>
-
-                <td>روند ماه جاری</td>
-                <td>حق مسکن</td>
-                <td>تعداد ایاب ذهاب</td>
-
+                {
+                    Table3.map(
+                        (item,index)=>(
+                        <td key={item.id} className='Black'>{item.titleOne}</td>
+                    ))
+                }
             </tr>
             <tr>
-                <td>بیمه تکمیلی سهم کارمند</td>
-                <td>حق اولاد</td>
-                <td>کارکرد موثر</td>
-
+                {
+                    Table6.map
+                    (
+                        (item,index)=>(
+                        <td
+                            key={item.id}
+                            className='Black1'>{item.title}</td>
+                    ))
+                }
             </tr>
-
             <tr>
                 <td
                  >
                 </td>
-                <td>اضافه کاری</td>
+                <td className='Black'>اضافه کاری</td>
                 <td></td>
+            </tr>
+            <tr>
+                <td
+                >
+                </td>
+                <td className='Black1'>ایاب و ذهاب</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td
+                >
+                </td>
+                <td className='Black'>مزایای متفرقه</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td
+                >
+                </td>
+                <td className='Black1'>روند ماه قبل</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td
+                >
+                </td>
+                <td className='Black'>بن کارگری</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td
+                >
+                </td>
+                <td className='Black1'>سنوات</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td
+                    className='Black'
+                >
+                    دستمزد روزانه (ریال)
+                </td>
+                <td
+                    className='Black'
+                >
 
-            </tr>
-
-            <tr>
-                <td
-                >
+                 جمع حقوق ومزایا (ریال)
                 </td>
-                <td>ایاب و ذهاب</td>
-                <td></td>
-            </tr>
-            <tr>
                 <td
+                    className='Black'
                 >
+جمع کسور(ریال)
                 </td>
-                <td>مزایای متفرقه</td>
-                <td></td>
             </tr>
             <tr>
                 <td
                 >
                 </td>
-                <td>روند ماه قبل</td>
-                <td></td>
-            </tr>
-            <tr>
-                <tr
-                >
-                </tr>
-                <td>بن کارگری</td>
-                <th></th>
-            </tr>
-            <tr>
                 <td
+                    className='Black1'
                 >
+                   خالص پرداختی (ریال)
                 </td>
-                <td>سنوات</td>
-                <td></td>
+                <td>
+                </td>
             </tr>
             </tbody>
         </Table>
         </div>
+        </Fragment>
     );
 }
-
-export default Tables;

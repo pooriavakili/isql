@@ -1,9 +1,90 @@
-.Table,td,th{
-
-
+.Table{
+direction: rtl;
     border: 1px solid black;
+
+}
+td{
+    direction: rtl;
+
+
+}
+th{
+    direction: rtl;
+    border: 1px solid black;
+
+
 }
 .Table{
-    width: 700px;
-    height:700px;
+    width: 400px;
+    height:400px;
+   margin-left: auto;
+    margin-right: auto;
+
+}
+.Neveshte{
+    display: flex;
+    justify-content: center;
+}
+.Rial{
+    margin-right: 13em;
+    margin-top: -1em;
+    font-size: .8em;
+}
+.Sherkat{
+display: flex;
+    justify-content: center;
+}
+.Iran{
+    display: flex;
+    justify-content: center;
+}
+.Rang1{
+    background-color:black;
+    color:white;
+    height:30px;
+    font-family:B Nazanin;
+    font-weight:bold;
+    width:100px;
+    padding-left:100px
+}
+.Rang2{
+    background-color:black;
+    color:white;
+    height:30px;
+    padding-left:100px;
+    width:100px;
+    font-family:B Nazanin;
+    font-weight:bold
+}
+.Rang3{
+    background-color:black;
+    color:white;
+    height:30px;
+    padding-left:100px;
+    font-family:B Nazanin;
+    font-weight:bold;
+    width:100px;
+}
+.Black{
+    background-color:white;
+    color:black;
+    font-family:B Nazanin;
+}
+.Black1{
+    background-color:rgb(170,170,170);
+    color:black;
+    font-family:B Nazanin;
+}
+.NeveshteStyle{
+    color:#0C5CCC;
+}
+@media (max-width: 700px) {
+  .Table{
+      width: 270px;
+      height: 270px;
+  }
+    .Rial{
+        display: none;
+    }
+
 }

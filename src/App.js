@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './App.css';
-import {Link} from 'react-router-dom'
+import Headers from "./components/Headers";
+import ContextProvider from "./stateManagment/Context";
 function App() {
-  return (
-    <div>
-        <Link to="/tables">table</Link>
-    </div>
-  );
+    useContext(ContextProvider)
+    return (
+        <div className="App">
+            <Headers/>
+        </div>
+    );
 }
-
 export default App;
